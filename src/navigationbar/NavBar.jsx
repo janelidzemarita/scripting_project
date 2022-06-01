@@ -5,7 +5,8 @@ import logo from './fds.jpg';
     return (
         <nav classname="nav">
            
-
+           
+            {/* Made by @godfather-coder */}
             <a href="/" calssname="site-name">Project</a>
             <ul classname="header"> 
                 <img src={logo} alt="Logo" />
