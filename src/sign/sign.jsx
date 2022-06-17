@@ -8,7 +8,7 @@ return(
             <input type="text" placeholder="LastName" />
             <input type="text" placeholder="Birth Year" />
             <input type="text" placeholder="username" />
-            <input type="email" placeholder="email" />
+            <input type="email" placeholder="Email" />
             <input type = "text" placeholder="password"/>
             <ul>
                 <li herf = "#">Forgot password ?</li>
