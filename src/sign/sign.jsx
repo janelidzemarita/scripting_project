@@ -14,7 +14,7 @@ return(
                 <li herf = "#">Forgot password ?</li>
             </ul>
             <div>
-                <input type = "button" value={"login"}/>
+                <input type = "button" value={"Sign up"}/>
             </div>
         </div>
 
