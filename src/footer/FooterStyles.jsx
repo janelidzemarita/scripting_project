@@ -2,11 +2,11 @@ import styled from 'styled-components';
    
 export const Box = styled.div`npm install --save styled-components
   padding: 80px 60px;
-  background: orange;
+  background: green;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 200px
+  height: 55%;
    
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -14,48 +14,49 @@ export const Box = styled.div`npm install --save styled-components
 `;
    
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    /* background: red; */
-`
-   
-export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  justify-content: center;
+  max-width: 1000px; 
+  margin: 0 auto;
+  background: red; 
 `;
+   
+export const Column = styled.div`
+display: flex;
+flex-direction: column;
+text-align: left;
+margin-left: 60px;
+`
+;
    
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 
-                         minmax(185px, 1fr));
+  minmax(185px, 1fr));
   grid-gap: 20px;
    
   @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, 
-                           minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, 
+  minmax(200px, 1fr));
   }
 `;
    
 export const FooterLink = styled.a`
-  color: #f5020b;
-  margin-bottom: 20px;
+  color: black;
+  margin-bottom: 2px;
   font-size: 18px;
   text-decoration: none;
    
   &:hover {
-      color: red;
-      transition: 200ms ease-in;
+  color: red;
+  transition: 200ms ease-in;
   }
 `;
-// here i mus to defin logo npm relstylessheet
+
 export const Heading = styled.p`
   font-size: 24px;
   color: #130475;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   font-weight: bold;
 `;
