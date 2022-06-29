@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-   
+
 export const Box = styled.div`npm install --save styled-components
   padding: 80px 60px;
   background: #1a2b49;
