@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+.register{
+  max-width: 978px;
+  width: 100vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  /* box-shadow: 1px 3px 10px #e9ecef; */
+  background-color: white;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+
+
+@media screen and (min-width: 860px)  {
+  .register .col-2 img{
+    display: initial;
+  }
+}
+.social-container {
+  background: #1a2b49;
+  padding: 25px 50px;
+  display: inline;
+}
+a.social {
+  /* margin-top: 100px; */
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+.contra{
+  position: absolute;
+  bottom: 0;
+  border: solid 3px rgb(89, 255, 0);
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+
+  color: #eb3223;
+}
+
+a.facebook {
+  
+  color: #4968ad;
+}
+
+a.twitter {
+  
+  color: #49a1eb;
+}
+
+a.instagram {
+ 
+  color: black;
+}
+
+
+a.twitter {
+
+  color: #49a1eb;
+}
+
+a.instagram {
+   
+  color: black;
+}

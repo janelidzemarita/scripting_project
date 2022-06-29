@@ -2,8 +2,9 @@ import styled from 'styled-components';
    
 export const Box = styled.div`npm install --save styled-components
   padding: 80px 60px;
-  background: green;
-  position: absolute;
+  background: #1a2b49;
+  z-index:2;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 55%;
@@ -19,7 +20,7 @@ export const Container = styled.div`
   justify-content: center;
   max-width: 1000px; 
   margin: 0 auto;
-  background: red; 
+  background:  #1a2b49; 
 `;
    
 export const Column = styled.div`
@@ -56,7 +57,7 @@ export const FooterLink = styled.a`
 
 export const Heading = styled.p`
   font-size: 24px;
-  color: #130475;
+  color: yellow;
   margin-bottom: 0px;
   font-weight: bold;
 `;
