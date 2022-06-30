@@ -15,8 +15,7 @@ export default function Form() {
                 <section>
                     <div className="register">
                         <div className="col-1">
-                            <h2>Sign In</h2>
-                            <span>register and enjoy the service</span>
+                            <span>Please Sign In with your E-mail or Username!</span>
 
 
                             <input type="text" name='username'  className="form-control" placeholder='Username'  //onChange={handleChange} value={data.first_name}

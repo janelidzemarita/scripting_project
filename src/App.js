@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-
-import Form from './pages/Login.jsx'
 import Footer from './footer/footer'
 import './App.css';
 import Navbar from './components/Navbar';
@@ -10,8 +8,9 @@ import { BrowserRouter as Router, Routes, Route}
 import Home from './pages/home.jsx';
 import About from './pages/about';
 import Blogs from './pages/blogs';
-import SignUp from './pages/Login.jsx';
+import SignUp from './pages/signup.js';
 import Contact from './pages/contact';
+import SignIn from './pages/signin';
 
 function App() {
   return (
@@ -24,8 +23,7 @@ function App() {
                 <Route path='/contact' element={<Contact/>} />
                 <Route path='/blogs' element={<Blogs/>} />
                 <Route path='/sign-up' element={<SignUp/>} />
-                <Route  path="/pages/Login.jsx" element={<Form/>} />
-                <Route  path="home" element={<Footer/>} />
+                <Route path='/sign-in' element={<SignIn/>} />
             </Routes>
         
     </div>

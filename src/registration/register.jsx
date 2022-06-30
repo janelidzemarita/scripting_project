@@ -45,7 +45,7 @@ const Sign = () => {
 return(
         <div>
             <form action="" onSubmit={submitForm}>
-                <label onInput={handleChange} value={data.first_name}> First Name:
+                <label onChange={handleChange} value={data.first_name}> First Name:
                 <input id= "firstname" type="text"   required placeholder="FirstName"  />
                 </label>
                 <label onChange={handleChange} value={data.last_name}> Last Name:
@@ -54,7 +54,8 @@ return(
                 <br/>
                 <label onChange={handleChange} value={data.birth_year}> Birth Date:
                 <input type="text" name="BirthDate" required  placeholder="Birth Date" />
-                </label><label onChange={handleChange} value={data.address}> Address:
+                </label>
+                <label onChange={handleChange} value={data.address}> Address:
                 <input type="text"  optional  placeholder="Address" />
                 </label>
                 <label onChange={handleChange} value={data.address}> Phone Number:
@@ -63,9 +64,11 @@ return(
                 <br/>
                 <label onChange={handleChange} value={data.username} > Username:
                 <input type="text"  required  placeholder="username"    />
-                </label> <label onChange={handleChange} value={data.email} > Email:
+                </label>
+                <label onChange={handleChange} value={data.email} > Email:
                 <input type="email" required  placeholder="Email"  />
-                </label><br/><label onChange={handleChange} value={data.password}> Password:
+                </label><br/>
+                <label onChange={handleChange} value={data.password}> Password:
                 <input type="password" required placeholder="password" />
                 </label><label> Repeat Password:
                 {/*Needs change. Confirm Password*/}
