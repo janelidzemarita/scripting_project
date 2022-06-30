@@ -1,3 +1,5 @@
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 const DataSlider = [
     {
         id: "1",
@@ -20,11 +22,11 @@ const DataSlider = [
         name: "სიღნაღი",
         subTitle:"Sighnaghi is located in the east of Georgia",
         price: 180,
-        url: "src/pics/sighnashi.png",
+        url: "../pics/sighnaghi.png",
         alt: "Something Went wrong",
         duration: "1 day"
     },
-
+// "./"
 ];
 
 export default DataSlider;
