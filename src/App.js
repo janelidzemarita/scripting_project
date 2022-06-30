@@ -17,7 +17,7 @@ function App() {
   return (
   <Router>
     <div className="App">
-      <Navbar/>
+
             <Routes>
                 <Route exact path='/'  element={<Home />} />
                 <Route path='/about' element={<About/>} />
@@ -27,6 +27,7 @@ function App() {
                 <Route  path="/pages/Login.jsx" element={<Form/>} />
                 <Route  path="home" element={<Footer/>} />
             </Routes>
+        
     </div>
   </Router>
 );
