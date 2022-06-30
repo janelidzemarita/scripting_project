@@ -1,6 +1,6 @@
 import React from 'react'
 import {useForm} from "react-hook-form";
-import Abouti from '../folder/abtus.jsx';
+
 
 export default function Form() {
 
@@ -31,7 +31,8 @@ export default function Form() {
 
                             {/* {errors.mobile?.type === "required" && "Mobile Number is required"} */}
                             <button className='btn'>Sign In</button>
-                            <Abouti/>
+
+
                         </div>
                     </div>
                 </section>

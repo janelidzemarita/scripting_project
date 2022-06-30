@@ -10,9 +10,6 @@ export const Box = styled.div`
   font-family: "Arial Rounded MT Bold";
   margin-top: 1rem;
   
-  
-
-
 
   @media (max-width: 1000px) {
     padding: 400px 300px;

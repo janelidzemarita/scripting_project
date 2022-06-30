@@ -3,8 +3,7 @@ import FontAwesome from 'react-fontawesome';
 import SocialFollow from "./SocialFollow";
 import yourlogo from "./yl.png";
 import {
-Box,
-Container,
+Box,Container,
 Row,
 Column,
 FooterLink,

@@ -27,6 +27,15 @@ const Navbar = () => {
                     <NavLink to="/homePage" activeStyle>
                         Home Page
                     </NavLink>
+                    <NavLink to="/tours" activeStyle>
+                        Tours
+                    </NavLink>
+                    <NavLink to="/camping" activeStyle>
+                       Camping
+                    </NavLink>
+                    <NavLink to="/hotels" activeStyle>
+                        Hotels
+                    </NavLink>
                     <NavLink to="/about" activeStyle>
                         About Us
                     </NavLink>

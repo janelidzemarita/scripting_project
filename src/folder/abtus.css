@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    z-index: 2;
+    position: relative;
   }
   
   html {
