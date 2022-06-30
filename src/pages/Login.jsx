@@ -1,10 +1,11 @@
 import React from 'react'
+import {useForm} from "react-hook-form";
 
 
 export default function Form() {
 
-    // const { register, handleSubmit, formState: { errors } } = useForm()
-    // const onSubmit = data => console.log(data);
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    const onSubmit = data => console.log(data);
 
 
 
@@ -17,14 +18,17 @@ export default function Form() {
                         <div className="col-1">
                             <span>Please Sign In with your E-mail or Username!</span>
 
+                            <label //onChange={handleChange} value={data.username}
+                            >
+                            <input type="text" name='username' className="form-control" placeholder='Username'
+                            />
+                            </label>
+                            <label //onChange={handleChange} value={data.password}
+                            >
+                            <input type="password" name='password' className="form-control" placeholder='Password'
+                            />
+                            </label>
 
-                            <input type="text" name='username'  className="form-control" placeholder='Username'  //onChange={handleChange} value={data.first_name}
-                            />
-                            <input type="text" name='password'  className="form-control" placeholder='Password' //  onChange={handleChange} value={data.password}
-                            />
-                            <input type="text"                  className="form-control" placeholder='Confirm password' />
-                            <input type="email" name='email'    className="form-control" placeholder='e-mail'   //  onChange={handleChange} value={data.email}
-                            />
                             {/* {errors.mobile?.type === "required" && "Mobile Number is required"} */}
                             <button className='btn'>Sign In</button>
 
