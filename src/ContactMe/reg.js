@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactDOM from 'react-dom';
 class ContactForm extends React.Component {
 
     constructor(props) {
@@ -25,9 +25,6 @@ class ContactForm extends React.Component {
         return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email);
     }
 
-    // isValidcontact(contactno) {
-    //   return /^[6-9]\d{9}$/.test(contactno);
-    // }
 
     handleBlur(e) {
 
@@ -127,7 +124,7 @@ class ContactForm extends React.Component {
 
                         </div>
                     </div>
-                    <p className="text-center"><a href="https://codematra.com/how-to-create-a-contact-form-in-react-js-using-bootstrap-with-validation/">Learn To Create Contact Form</a></p>
+
                 </>
             );
         } else {
@@ -144,3 +141,4 @@ ReactDOM.render(
     <ContactForm title="Contact Form" />,
     document.getElementById('root')
 );
+export default ContactForm;

@@ -21,13 +21,13 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 
   &.active {
-    color: #4d4dff;
+    color: #0d3d13;
   }
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #ffffff;
+  color: #e71010;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;

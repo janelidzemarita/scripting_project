@@ -24,8 +24,11 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavMenu>
+                    <NavLink to="/homePage" activeStyle>
+                        Home Page
+                    </NavLink>
                     <NavLink to="/about" activeStyle>
-                        About
+                        About Us
                     </NavLink>
                     <NavLink to="/contact" activeStyle>
                         Contact Us
