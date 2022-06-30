@@ -9,7 +9,8 @@ export const Box = styled.div`
   height: 20%;
   font-family: "Arial Rounded MT Bold";
   margin-top: 1rem;
-
+  
+  
 
 
 

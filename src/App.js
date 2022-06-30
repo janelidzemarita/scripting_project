@@ -11,7 +11,7 @@ import Blogs from './pages/blogs';
 import SignUp from './pages/signup.js';
 import Contact from './pages/contact';
 import SignIn from './pages/signin';
-
+import Abouti from './folder/abtus.jsx';
 function App() {
   return (
   <Router>
