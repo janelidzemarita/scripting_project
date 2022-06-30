@@ -18,14 +18,14 @@ function App() {
     <div className="App">
             <Navbar/>
             <Routes>
-                <Route exact path='/'  element={<Home />} />
+                <Route path='/homePage' element={<Home />} />
                 <Route path='/about' element={<About/>} />
                 <Route path='/contact' element={<Contact/>} />
                 <Route path='/blogs' element={<Blogs/>} />
                 <Route path='/sign-up' element={<SignUp/>} />
                 <Route path='/sign-in' element={<SignIn/>} />
             </Routes>
-        
+            <Footer/>
     </div>
   </Router>
 );
