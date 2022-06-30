@@ -6,15 +6,13 @@ export default function Slideshow() {
   return (
     <Section id="hero">
       <div className="background">
-      <video autoPlay loop muted >
-        <source type ='video/mp4 'src={ video }/> 
-        
+      <video autoPlay loop muted width="100%" height="100%" controls >
+        <source type ='video/mp4 'src={ video }/>
         </video>
       </div>
       <div className="content">
         <div className="title">
           <h1>TRAVEL TO EXPLORE</h1>
-          
         </div>
         <div className="search">
           <div className="container">
