@@ -15,12 +15,12 @@ const Footer = () => {
 return (
  
 		<Box>
-			<img src={yourlogo} alt="Logo" />
-		<h1 style={{ color: "blue",
-					textAlign: "center",
-					marginTop: "-50px" }}>
-			
-		</h1>
+		{/*	<img src={yourlogo} alt="Logo" />*/}
+		{/*<h1 style={{ color: "blue",*/}
+		{/*			textAlign: "center",*/}
+		{/*			marginTop: "-50px" }}>*/}
+		{/*	*/}
+		{/*</h1>*/}
 		<Container>
 			<Row>
 				<Column>

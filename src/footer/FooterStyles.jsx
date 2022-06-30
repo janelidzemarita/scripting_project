@@ -6,7 +6,7 @@ export const Box = styled.div`
   position: -ms-device-fixed;
   bottom: 0;
   width: inherit;
-  height: border-box;
+  height: 20%;
   font-family: "Arial Rounded MT Bold";
   margin-top: 1rem;
 

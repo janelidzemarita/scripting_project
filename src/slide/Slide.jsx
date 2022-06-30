@@ -1,25 +1,21 @@
 import React, {useState} from 'react';
 import "./SlideStyles.css";
 import DataSlider from "./dataSlider";
-// 
 
 const Slider = () => {
 
     const [slideIndex, setSlideIndex] = useState(1)
-
     const moveDot = index => {
         setSlideIndex(index)
     }
-
     return (
-
         <div className="container-slider">
-            {DataSlider.map((pictures, index, obj) => {
+            {DataSlider.map(({name, price, url}, index, obj) => {
                 return (
-                    <div key={obj.id}
+                    <div key={obj.id}style={{'backgroundImage' : `url(${url})`}}
                          className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <h3 style={{'color': 'darkred', 'margin-left': '5px'}}>{pictures.name} {"-"} {pictures.price} ₾</h3>
-                        <img src={pictures.image}/>
+                        <h3 style={{'color': 'darkred', 'margin-left': '5px'}}>{name} {"-"} {price} ₾</h3>
+                        {/*<url src={url} alt={url}/>*/}
                     </div>
                 )
             })}

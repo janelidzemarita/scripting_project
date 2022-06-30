@@ -4,7 +4,7 @@ const DataSlider = [
         name: "მესტია",
         price: 200,
         subTitle: "mestia is located in the north of Georgia",
-        image: "../pics/mestia.png",
+        url: "mestia.png",
         duration: "4 days"
     },
     {
@@ -12,7 +12,7 @@ const DataSlider = [
         name: "ბათუმი",
         price: 150,
         subTitle:"batumi is a seaside city, located in the south-west of Georgia by the Black Sea",
-        image: "../pics/batumi.png",
+        url: "src/pics/batumi.png",
         duration: "3 days"
     },
     {
@@ -20,7 +20,8 @@ const DataSlider = [
         name: "სიღნაღი",
         subTitle:"Sighnaghi is located in the east of Georgia",
         price: 180,
-        image: "../pics/sighnaghi.png",
+        url: "src/pics/sighnashi.png",
+        alt: "Something Went wrong",
         duration: "1 day"
     },
 

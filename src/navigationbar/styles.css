@@ -7,11 +7,12 @@
     text-decoration: none;
 }
 .btnlg:hover{
-background: rgb(0, 51, 255);
+    background: rgb(0, 51, 255);
 }
-/*a{*/
-
-/*}*/
+a{
+    font-family: "Arial Black";
+    color: #e9ecef;
+}
 .nav{
     /*background: rgb(234, 190, 15);*/
     display: flex;
@@ -21,9 +22,7 @@ background: rgb(0, 51, 255);
     background-color: #276565;
     color: #030303;
 }
-/*.header{*/
-/*    background-color: #c50808;*/
-/*}*/
-/*.nav-elemnts{*/
-/*    text-decoration: none;*/
-/*}*/
+
+.nav-elemnts{
+    text-decoration: none;
+}

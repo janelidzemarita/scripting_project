@@ -11,9 +11,9 @@ import Form from "./Login";
             <img src={logo} alt="Logo" />
             <ul className="header">
                 <li className = 'nav-elements'>
-                    <a href ="Languages">Language</a>
-                    <a href = "cart"> Cart</a>
-                    <Link to="/navigationbar/Sign.jsx"> Sign up</Link>           
+                    <a className="option" href ="Languages"> Language</a>
+                    <a className="option" href = "cart"> Cart </a>
+                    <Link to="../navigationbar/Sign.jsx"> Sign up </Link>
                 </li>
              <button className="btnlg" herf="Sign">Log in</button>
                 {/*<Route  path="/navigationbar/Login.jsx" element={<Form/>} />*/}
