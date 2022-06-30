@@ -12,7 +12,9 @@ const Sign = () => {
       birth_year: "",
       username  : "",
       email     : "",
-      password  : ""
+      password  : "",
+      address   : "",
+      phoneNum  :""
     });
   
     const handleChange=(e) => {
@@ -28,7 +30,9 @@ const Sign = () => {
           birth_year : data.birth_year,
           username   : data.username,
           email      : data.email,
-          password   : data.password
+          password   : data.password,
+          address    : data.address,
+          phoneNum   : data.phoneNum
       }
   
       console.log(sendData);
@@ -41,17 +45,36 @@ const Sign = () => {
 return(
         <div>
             <form action="" onSubmit={submitForm}>
-                <input type="text"    placeholder="FirstName"  onChange={handleChange} value={data.first_name}/>
-                <input type="text"    placeholder="LastName"   onChange={handleChange} value={data.last_name} />
-                <input type="text"    placeholder="Birth Year" onChange={handleChange} value={data.birth_year}/>
-                <input type="text"    placeholder="username"   onChange={handleChange} value={data.username}  />
-                <input type="email"   placeholder="Email"      onChange={handleChange} value={data.email}     />
-                <input type="password"placeholder="password"   onChange={handleChange} value={data.password}  />
-                <ul>
-                    <li herf = "#">Forgot password ?</li>
-                </ul>
+                <label onInput={handleChange} value={data.first_name}> First Name:
+                <input id= "firstname" type="text"   required placeholder="FirstName"  />
+                </label>
+                <label onChange={handleChange} value={data.last_name}> Last Name:
+                <input type="text"   required placeholder="LastName"    />
+                </label>
+                <br/>
+                <label onChange={handleChange} value={data.birth_year}> Birth Date:
+                <input type="text" name="BirthDate" required  placeholder="Birth Date" />
+                </label><label onChange={handleChange} value={data.address}> Address:
+                <input type="text"  optional  placeholder="Address" />
+                </label>
+                <label onChange={handleChange} value={data.address}> Phone Number:
+                <input type="tel"  required  placeholder="Phone Number" />
+                </label>
+                <br/>
+                <label onChange={handleChange} value={data.username} > Username:
+                <input type="text"  required  placeholder="username"    />
+                </label> <label onChange={handleChange} value={data.email} > Email:
+                <input type="email" required  placeholder="Email"  />
+                </label><br/><label onChange={handleChange} value={data.password}> Password:
+                <input type="password" required placeholder="password" />
+                </label><label> Repeat Password:
+                {/*Needs change. Confirm Password*/}
+                <input type="password" required placeholder="password" />
+                </label>
                 <div>
-                    <input type="submit" name="submit" value="Sign Up" class="btn"></input>
+                    <label value="Sign Up">
+                    <input type="submit" name="submit"  class="btn"/>
+                    </label>
                 </div>
             </form>
         </div>

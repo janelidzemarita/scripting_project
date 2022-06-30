@@ -19,7 +19,6 @@ function App() {
     <div className="App">
        <Navbar/>
        <Slider/>
-       <Footer/>
             <Routes>
                 <Route exact path='/' exact element={<Home />} />
                 <Route path='/about' element={<About/>} />
@@ -29,6 +28,7 @@ function App() {
                 <Route  path="/pages/Login.jsx" element={<Form/>} />
                 <Route  path="home" element={<Footer/>} />
             </Routes>
+        <Footer/>
     </div>
   </Router>
 );
