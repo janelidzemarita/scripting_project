@@ -16,7 +16,7 @@ return (
  
 		<Box>
 			<img src={yourlogo} alt="Logo" />
-		<h1 style={{ color: "green",
+		<h1 style={{ color: "blue",
 					textAlign: "center",
 					marginTop: "-50px" }}>
 			
@@ -31,15 +31,15 @@ return (
 				</Column>
 				<Column>
 					<Heading>Services</Heading>
-					<FooterLink href="#">TOURS</FooterLink>
-					<FooterLink href="#">HIKING</FooterLink>
-					<FooterLink href="#">CAMPING</FooterLink>
+					<FooterLink href="#">Tours</FooterLink>
+					<FooterLink href="#">Hiking</FooterLink>
+					<FooterLink href="#">Camping</FooterLink>
 					
 				</Column>
 				<Column>
 					<Heading>Contact Us</Heading>
-					<FooterLink href="#">GEORGIA</FooterLink>
-					<FooterLink href="#">TURKEY</FooterLink>
+					<FooterLink href="#">Georgia</FooterLink>
+					<FooterLink href="#">Germany</FooterLink>
 					<FooterLink href="#">USA</FooterLink>
 				</Column>
 				<Column>

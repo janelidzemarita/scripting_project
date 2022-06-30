@@ -1,5 +1,5 @@
 .btnlg{
-    background-color: rgb(73, 220, 85);
+    background-color: rgb(28, 105, 37);
     width:2cm;
     height:30px;
     border :0px;
@@ -7,14 +7,23 @@
     text-decoration: none;
 }
 .btnlg:hover{
-background: rgb(255, 0, 0);
+background: rgb(0, 51, 255);
 }
+/*a{*/
+
+/*}*/
 .nav{
-    background: rgb(234, 190, 15);
+    /*background: rgb(234, 190, 15);*/
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #276565;
+    color: #030303;
 }
-.header{
-    background-color: black;
-}
-.nav-elemnts{
-    text-decoration: none;
-}
+/*.header{*/
+/*    background-color: #c50808;*/
+/*}*/
+/*.nav-elemnts{*/
+/*    text-decoration: none;*/
+/*}*/

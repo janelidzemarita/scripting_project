@@ -4,7 +4,7 @@ import Slider from "./slide/Slide.jsx";
 import "./navigationbar/styles.css"
 import Form from './navigationbar/Login.jsx'
 import Footer from './footer/footer'
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
        <NavBar/>
        <Slider/>
        <Footer/>
-        <Routes>
-            <Route  path="home" element={<Footer/>} />
-            <Route  path="/navigationbar/Login.jsx" element={<Form/>} />
-        </Routes>
+
+        <Route  path="home" element={<Footer/>} />
+        <Route  path="/navigationbar/Login.jsx" element={<Form/>} />
+
     </div>
  </Router >
   );
