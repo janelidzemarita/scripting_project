@@ -2,11 +2,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
-import Axios from 'axios';
 
 
 const Register = () => {
-  let history = useNavigate();
+  let navigate = useNavigate();
 
   const [data, setData] = useState({
     first_name : "",
@@ -15,107 +14,200 @@ const Register = () => {
     email      : "",
     username   : "",
     password   : ""
-  })
+  });
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
-
-    console.log(data);
   }
 
-  const submitForm = (e) => {
-    e.preventDefault();
-    const sendData = {
-      first_name : data.first_name,
-      last_name  : data.last_name,
-      phoneNumber: data.phoneNumber,
-      email      : data.email,
-      username   : data.username,
-      password   : data.password
-    }
+  // Inserting a new user into the Database.
+  const submitForm = async(event) => {
+    try {
+      event.preventDefault();
+      event.persist();
 
-    console.log(sendData);
+      axios.post('http://localhost/apicrud/addusers.php', {
+        first_name : data.first_name,
+        last_name  : data.last_name,
+        phoneNumber: data.phoneNumber,
+        email      : data.email,
+        username   : data.username,
+        password   : data.password
+      }).
+      then(res => {
+        console.log(res.data); 
+        navigate('/'); 
+        return;
+      })
+    } catch (error) {throw error;}
+  };
 
-    axios.post('http://localhost/php-for-react/insert.php', sendData)
-    .then((result) => {
-      if (result.data.Status == 'Invalid') {
-        alert("Invalid User");
-      }
-      else {
-        history('/dashboard');
-      }
-    })
-  }
+
+    // const sendData = {
+    //   first_name : data.first_name,
+    //   last_name  : data.last_name,
+    //   phoneNumber: data.phoneNumber,
+    //   email      : data.email,
+    //   username   : data.username,
+    //   password   : data.password
+
+    // axios.post('http://localhost/php-for-react/insert.php', sendData)
+
 
 
   return(
-    <div className="main-box">
-      <form onSubmit={submitForm}>
-      <div className="row">
-        <div className="col-md-12 text-center"><h1>Register</h1></div>
-      </div>
-        
-        <div className="row">
-          <div className="col-md-6">First Name</div>
-          <div className="col-md-6">
-            <input type="text" name="first_name" className="form-control"
-            onChange={handleChange} value={data.first_name}
-            />
-          </div>
-        </div>
+    <form className="insertForm" onSubmit={submitForm}>
+    <h2> Registration Form </h2>
 
-        <div className="row">
-          <div className="col-md-6">Last Name</div>
-          <div className="col-md-6">
-            <input type="text" name="last_name" className="form-control"
-            onChange={handleChange} value={data.last_name}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">Phone Number</div>
-          <div className="col-md-6">
-            <input type="tel" name="phoneNumber" className="form-control"
-                   onChange={handleChange} value={data.phoneNumber}
-            />
-          </div>
-        </div>
+    <label htmlFor="_first_name">First Name</label>
+    <input
+      type="text"
+      id="_first_name"
+      name="first_name"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
 
-        <div className="row">
-          <div className="col-md-6">Email</div>
-          <div className="col-md-6">
-            <input type="text" name="email" className="form-control"
-            onChange={handleChange} value={data.email}
-            />
-          </div>
-        </div>
+    <label htmlFor="_last_name">Last Name</label>
+    <input
+      type="text"
+      id="_last_name"
+      name="last_name"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
 
-        <div className="row">
-          <div className="col-md-6">UserName</div>
-          <div className="col-md-6">
-            <input type="text" name="username" className="form-control"
-            onChange={handleChange} value={data.username}
-            />
-          </div>
-        </div>
+    <label htmlFor="_email">Email</label>
+    <input
+      type="email"
+      id="_email"
+      name="email"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
 
-        <div className="row">
-          <div className="col-md-6">Password</div>
-          <div className="col-md-6">
-            <input type="password" name="password" className="form-control"
-            onChange={handleChange} value={data.password}
-            />
-          </div>
-        </div>
+    <label htmlFor="_phoneNumber">Phone Number</label>
+    <input
+      type="text"
+      id="_phoneNumber"
+      name="phoneNumber"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
 
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <input type="submit" name="submit" value="Register" className="btn btn-success" />
-          </div>
-        </div>
-        </form>
-    </div>
+    
+    
+    <label htmlFor="_username">Username</label>
+    <input
+      type="text"
+      id="_username"
+      name="username"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
+    <label htmlFor="_password">Password</label>
+    <input
+      type="password"
+      id="_password"
+      name="password"
+      onChange={handleChange}
+      autoComplete="off"
+      required
+    />
+    <br /> <br />
+    <input type="submit" value="Register" />
+  </form>
   )
 }
 
 export default Register;
+
+
+// const Register = () => {
+//   let history = useNavigate();
+
+//   const [data, setData] = useState({
+//     first_name : "",
+//     last_name  : "",
+//     email      : "",
+//     username   : "",
+//     password   : ""
+//   })
+
+//   const handleChange = (e) => {
+//     setData({ ...data, [e.target.name]: e.target.value });
+
+//     console.log(data);
+//   }
+
+//   const submitForm = (e) => {
+//     e.preventDefault();
+//     const sendData = {
+//       first_name : data.first_name,
+//       last_name  : data.last_name,
+//       email      : data.email,
+//       username   : data.username,
+//       password   : data.password
+//     }
+
+//     console.log(sendData);
+
+//     axios.post('http://localhost/php-for-react/insert.php', sendData)
+//     .then((result) => {
+//       if (result.data.Status == 'Invalid') {
+//         alert("Invalid User");
+//       }
+//       else {
+//         history('/dashboard');
+//       }
+//     })
+//   }
+
+// function Register() {
+//   const [usernameReg, setUsernameReg] = useState("");
+//   const [passwordReg, setPasswordReg] = useState("");
+
+//   const register = () => {
+//     Axios.post("http://localhost:4600/api/insert", {
+//       username : usernameReg,
+//       password : passwordReg,
+//     }).then(() => {
+//       alert("Successful insert.");
+//     });
+//   };
+
+//   return(
+//     // <p>Hello</p>
+//     <div className="App">
+//       <div className="registration">
+//         <h1>Registration</h1>
+//         <label>Username</label>
+//         <input 
+//           type="text" 
+//           onChange={(e) => {
+//             setUsernameReg(e.target.value);
+//           }} 
+//         />
+//         <label>Password</label>
+//         <input 
+//           type="text" 
+//           onChange={(e) => {setPasswordReg(e.target.value);
+//           }} 
+//         />    
+//         <button onClick={register}> Register </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Register;
