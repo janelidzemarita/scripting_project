@@ -86,18 +86,32 @@ class ContactForm extends React.Component {
                     <div className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 bg-light">
                         <div className="card-header bg-transparent border-0 text-center text-uppercase"><h3>{this.props.title}</h3></div>
                         <div className="card-body">
-                            <form action="/" onSubmit={(e) => this.handleSubmit(e)} encType="multipart/form-data" autoComplete="off">
+                            <form action="/" onSubmit={(e) => this.handleSubmit(e)}
+                                  encType="multipart/form-data" autoComplete="off"
+                            style={{color: 'black',
+                                width: '50%',
+                            alignContent: 'center'}}>
                                 <div className="form-group">
                                     <label className="mb-0">Your name<span className="text-danger">*</span></label>
-                                    <input name="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur} />
+                                    <input name="name" type="text" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange} onBlur={this.handleBlur}
+                                           style={{width: '100%',
+                                        padding: '15px', margin: '5px 0 22px 0',
+                                        display: 'inline-block',
+                                        border: 'none',
+                                        background:'#8eafb0'}}/>
                                     { nameError
                                         ? <div className="alert alert-danger mt-2">Name is a required field.</div>
                                         : ''
                                     }
-                                </div>
-                                <div className="form-group">
                                     <label className="mb-0">Your email<span className="text-danger">*</span></label>
-                                    <input name="email" type="email" className="form-control" placeholder="Email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} />
+                                    <input name="email" type="email"
+                                           className="form-control" placeholder="Email" value={this.state.email}
+                                           onChange={this.handleChange} onBlur={this.handleBlur}
+                                           style={{width: '100%',
+                                               padding: '15px', margin: '5px 0 22px 0',
+                                               display: 'inline-block',
+                                               border: 'none',
+                                               background:'#8eafb0'}}/>
                                     { emailError
                                         ? <div className="alert alert-danger mt-2">Email is a required field.</div>
                                         : ''
@@ -108,18 +122,40 @@ class ContactForm extends React.Component {
                                     }
                                 </div>
                                 <div className="form-group">
+
+                                </div>
+                                <div className="form-group">
                                     <label className="mb-0">Your contact number (Optional)</label>
-                                    <input name="contact" type="text" className="form-control" placeholder="Contact" onChange={this.handleChange} value={this.state.contact}  />
+                                    <input name="contact" type="text"
+                                           className="form-control" placeholder="Contact"
+                                           onChange={this.handleChange} value={this.state.contact}
+                                           style={{width: '100%',
+                                               padding: '15px', margin: '5px 0 22px 0',
+                                               display: 'inline-block',
+                                               border: 'none',
+                                               background:'#8eafb0'}}/>
                                 </div>
                                 <div className="form-group">
                                     <label className="mb-0">Message<span className="text-danger">*</span></label>
-                                    <textarea name="message" type="text" className="form-control" placeholder="Message" value={this.state.message} onChange={this.handleChange} onBlur={this.handleBlur} />
+                                    <textarea name="message" type="text" className="form-control"
+                                              placeholder="Message" value={this.state.message}
+                                              onChange={this.handleChange} onBlur={this.handleBlur}
+                                              style={{width: '100%',
+                                                  padding: '40px', margin: '5px 0 22px 0',
+                                                  display: 'inline-block',
+                                                  border: 'none',
+                                                  background:'#8eafb0'}}/>
                                     { messageError
                                         ? <div className="alert alert-danger mt-2">Message is a required field.</div>
                                         : ''
                                     }
                                 </div>
-                                <p className="text-center mb-0"><input type="submit" className="btn btn-primary btn-lg w-100 text-uppercase" value="Submit Now" /></p>
+                                <p className="text-center mb-0"><input type="submit" className="btn btn-primary btn-lg w-100 text-uppercase"
+                                                                       value="Submit Now" style={{width: '100%',
+                                    padding: '15px', margin: '5px 0 22px 0',
+                                    display: 'inline-block',
+                                    border: 'none',
+                                    background:'#518068'}} /></p>
                             </form>
 
                         </div>

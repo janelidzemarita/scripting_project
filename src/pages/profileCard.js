@@ -61,9 +61,7 @@ export default function Recommend() {
     const [active, setActive] = useState(1);
     return (
         <Section id="recommend">
-            <div className="title">
-                <h2>Recommended Destinations</h2>
-            </div>
+
             <div className="destinations">
                 {data.map((destination) => {
                     return (
@@ -124,6 +122,7 @@ const Section = styled.section`
       flex-direction: column;
       gap: 0.5rem;
       background-color: #8338ec14;
+      color: black;
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       &:hover {

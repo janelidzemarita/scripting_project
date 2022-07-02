@@ -36,7 +36,11 @@ const Login = () => {
 
 
         return(
-          <form className="insertForm" onSubmit={submitForm}>
+          <form className="insertForm" onSubmit={submitForm} style={{width: '30%',
+              padding: '15px', margin: '5px 0 22px 0',
+              display: 'inline-block',
+              border: 'none',
+              color:'#181818'}}>
             
             <label htmlFor="_username">Username</label>
             <input
@@ -46,6 +50,11 @@ const Login = () => {
                 onChange={handleChange}
                 autoComplete="off"
                 required
+                style={{width: '100%',
+                    padding: '15px', margin: '5px 0 22px 0',
+                    display: 'inline-block', borderColor: "black",
+                    background:'#f1f1f1'
+                }}
             />
             <br /> <br />
             <label htmlFor="_password">Password</label>
@@ -56,9 +65,18 @@ const Login = () => {
                 onChange={handleChange}
                 autoComplete="off"
                 required
+                style={{width: '100%',
+                    padding: '15px', margin: '5px 0 22px 0',
+                    display: 'inline-block', borderColor: "black",
+                    background:'#f1f1f1'
+                }}
             />
             <br /> <br />
-            <input type="submit" value="Login" />
+            <input type="submit" value="Login" style={{width: '100%',
+                padding: '15px', margin: '5px 0 22px 0',
+                display: 'inline-block',
+                border: 'none',
+                background:'#5fa47e'}}/>
             <br /> <br />
             {/* <input type="text" name="fname" value="<?php echo $_POST['$message'] ?>" /> */}
         </form>

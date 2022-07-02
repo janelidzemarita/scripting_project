@@ -31,9 +31,8 @@ return (
 				<Column>
 					<Heading>Services</Heading>
 					<FooterLink href="#">Tours</FooterLink>
-					<FooterLink href="#">Hiking</FooterLink>
+					<FooterLink href="https://www.booking.com/">Hotels</FooterLink>
 					<FooterLink href="#">Camping</FooterLink>
-					
 				</Column>
 				<Column>
 					<Heading>Contact Us</Heading>

@@ -19,9 +19,6 @@ const Navbar = () => {
                     <NavLink to="/camping" activeStyle>
                        Camping
                     </NavLink>
-                    <NavLink to="/Hotels" activeStyle>
-                        Hotels
-                    </NavLink>
                     <NavLink to="/about" activeStyle>
                         About Us
                     </NavLink>

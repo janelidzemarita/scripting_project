@@ -11,8 +11,11 @@ import Blogs from './pages/blogs';
 import SignUp from './pages/signup.js';
 import Contact from './pages/contact';
 import SignIn from './pages/signin';
-import Hotel from './pages/hotels';
 import Abouti from './folder/abtus.jsx';
+import Tours from "./pages/Tours";
+import Camping from "./pages/Camping";
+
+
 function App() {
   return (
   <Router>
@@ -21,7 +24,8 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/homePage' element={<Home/>} />
-                <Route path='/Hotels' element={<Hotel/>} />
+                <Route path='/tours' element={<Tours/>} />
+                <Route path='/camping' element={<Camping/>} />
                 <Route path='/about' element={<About/>} />
                 <Route path='/contact' element={<Contact/>} />
                 <Route path='/blogs' element={<Blogs/>} />

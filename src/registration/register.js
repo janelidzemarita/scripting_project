@@ -57,10 +57,14 @@ const Register = () => {
 
   return(
 
-    <form className="insertForm" onSubmit={submitForm}>
+    <form className="insertForm"  onSubmit={submitForm} style={{width: '40%',
+      padding: '15px', margin: '5px 0 22px 0',
+      display: 'inline-block',
+      border: 'none',
+      color:'#181818'}}>
     <h2> Registration Form </h2>
 
-    <label htmlFor="_first_name">First Name</label>
+    <label htmlFor="_first_name" >First Name</label>
     <input
       type="text"
       id="_first_name"
@@ -68,6 +72,11 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+        padding: '15px', margin: '5px 0 22px 0',
+        display: 'inline-block', borderColor: "black",
+          background:'#f1f1f1'
+        }}
     />
     <br /> <br />
 
@@ -79,6 +88,10 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+        padding: '15px', margin: '5px 0 22px 0',
+        display: 'inline-block', borderColor: "black",
+        background:'#f1f1f1'}}
     />
     <br /> <br />
 
@@ -90,6 +103,10 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+          padding: '15px', margin: '5px 0 22px 0',
+          display: 'inline-block', borderColor: "black",
+          background:'#f1f1f1'}}
     />
     <br /> <br />
 
@@ -101,6 +118,10 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+          padding: '15px', margin: '5px 0 22px 0',
+          display: 'inline-block', borderColor: "black",
+          background:'#f1f1f1'}}
     />
     <br /> <br />
 
@@ -114,6 +135,10 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+          padding: '15px', margin: '5px 0 22px 0',
+          display: 'inline-block', borderColor: "black",
+          background:'#f1f1f1'}}
     />
     <br /> <br />
     <label htmlFor="_password">Password</label>
@@ -124,9 +149,17 @@ const Register = () => {
       onChange={handleChange}
       autoComplete="off"
       required
+      style={{width: '100%',
+          padding: '15px', margin: '5px 0 22px 0',
+          display: 'inline-block', borderColor: "black",
+          background:'#f1f1f1'}}
     />
     <br /> <br />
-    <input type="submit" value="Register" />
+    <input type="submit" value="Register" style={{width: '100%',
+      padding: '15px', margin: '5px 0 22px 0',
+      display: 'inline-block',
+      border: 'none',
+      background:'#5fa47e'}}/>
   </form>
 
   )
