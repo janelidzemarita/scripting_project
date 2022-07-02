@@ -56,6 +56,7 @@ const Register = () => {
 
 
   return(
+
     <form className="insertForm" onSubmit={submitForm}>
     <h2> Registration Form </h2>
 
@@ -127,87 +128,8 @@ const Register = () => {
     <br /> <br />
     <input type="submit" value="Register" />
   </form>
+
   )
 }
 
 export default Register;
-
-
-// const Register = () => {
-//   let history = useNavigate();
-
-//   const [data, setData] = useState({
-//     first_name : "",
-//     last_name  : "",
-//     email      : "",
-//     username   : "",
-//     password   : ""
-//   })
-
-//   const handleChange = (e) => {
-//     setData({ ...data, [e.target.name]: e.target.value });
-
-//     console.log(data);
-//   }
-
-//   const submitForm = (e) => {
-//     e.preventDefault();
-//     const sendData = {
-//       first_name : data.first_name,
-//       last_name  : data.last_name,
-//       email      : data.email,
-//       username   : data.username,
-//       password   : data.password
-//     }
-
-//     console.log(sendData);
-
-//     axios.post('http://localhost/php-for-react/insert.php', sendData)
-//     .then((result) => {
-//       if (result.data.Status == 'Invalid') {
-//         alert("Invalid User");
-//       }
-//       else {
-//         history('/dashboard');
-//       }
-//     })
-//   }
-
-// function Register() {
-//   const [usernameReg, setUsernameReg] = useState("");
-//   const [passwordReg, setPasswordReg] = useState("");
-
-//   const register = () => {
-//     Axios.post("http://localhost:4600/api/insert", {
-//       username : usernameReg,
-//       password : passwordReg,
-//     }).then(() => {
-//       alert("Successful insert.");
-//     });
-//   };
-
-//   return(
-//     // <p>Hello</p>
-//     <div className="App">
-//       <div className="registration">
-//         <h1>Registration</h1>
-//         <label>Username</label>
-//         <input 
-//           type="text" 
-//           onChange={(e) => {
-//             setUsernameReg(e.target.value);
-//           }} 
-//         />
-//         <label>Password</label>
-//         <input 
-//           type="text" 
-//           onChange={(e) => {setPasswordReg(e.target.value);
-//           }} 
-//         />    
-//         <button onClick={register}> Register </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Register;

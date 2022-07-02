@@ -1,23 +1,9 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-//
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-//
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+
 import React from "react";
-import { Nav, NavLink, NavMenu }
+import { Nav, NavLink, NavMenu , }
     from "./NavbarElements";
+// import { NavDropdown } from 'react-bootstrap';
+//
 
 const Navbar = () => {
     return (
@@ -33,7 +19,7 @@ const Navbar = () => {
                     <NavLink to="/camping" activeStyle>
                        Camping
                     </NavLink>
-                    <NavLink to="/hotels" activeStyle>
+                    <NavLink to="/Hotels" activeStyle>
                         Hotels
                     </NavLink>
                     <NavLink to="/about" activeStyle>
@@ -51,6 +37,10 @@ const Navbar = () => {
                     <NavLink to="/sign-in" activeStyle>
                         Sign In
                     </NavLink>
+                    {/*<NavDropdown title="Language" id="basic-nav-dropdown">*/}
+                    {/*    <NavDropdown.Item href="#">English</NavDropdown.Item>*/}
+                    {/*    <NavDropdown.Item href="#">ქართული</NavDropdown.Item>*/}
+                    {/*</NavDropdown>*/}
                 </NavMenu>
             </Nav>
         </>
